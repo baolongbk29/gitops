@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "www_bucket" {
 }
 
 resource "aws_s3_bucket_website_configuration" "www_bucket" {
-    bucket = aws_s3_bucket.www_bucket
+    bucket = aws_s3_bucket.www_bucket.id
 
 
     index_document {
