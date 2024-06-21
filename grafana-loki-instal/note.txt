@@ -1,0 +1,1 @@
+kubectl create secret generic grafana-secret --from-literal=admin-password=admin --namespace=monitoring
